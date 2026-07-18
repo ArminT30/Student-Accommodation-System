@@ -1,123 +1,93 @@
 # Student Accommodation System
 
+A responsive web application that helps students find suitable PG (Paying Guest) accommodations. Users can browse properties, filter accommodations, view detailed information, and shortlist their preferred properties. The project is built using PHP, MySQL, AJAX, and React.
+
+---
+
 ## Project Overview
 
-Student Accommodation System is a responsive web application developed to help students find suitable PG (Paying Guest) accommodations. The platform allows students to explore available properties, filter accommodations based on city, budget, and gender, view detailed property information, and shortlist properties of interest.
+The Student Accommodation System provides an easy and interactive platform for students to search for PG accommodations based on their requirements.
 
-The project combines PHP, MySQL, AJAX, JavaScript, and React to create a dynamic and interactive accommodation platform with a user-friendly interface.
+The application includes:
 
----
-
-# Objectives
-
-- Design responsive property listing and property detail pages
-- Develop and integrate a structured MySQL database
-- Build dynamic web pages using PHP and MySQL
-- Implement AJAX-based interactions without page reload
-- Introduce component-based frontend development using React
-- Provide an easy platform for students to search for accommodation
+- Property listing
+- Property details
+- User authentication
+- Interested (Shortlist) feature
+- AJAX-based interactions
+- React-based frontend components
 
 ---
 
-# Features
+## Features
 
-## Property Listing
+### Property Listing
 
-- Display PG properties with:
-  - Property images
-  - Property name
-  - Location
-  - Rent details
-  - Gender type
-  - Ratings
+- View available PG properties
+- Display property images
+- View rent, location, ratings, and gender type
+- Responsive user interface
+- Filter properties by:
+  - City
+  - Budget
+  - Gender
 
-- Filtering options:
-  - City-based filtering
-  - Budget-based filtering
-  - Gender-based filtering
+### Property Details
 
-- Responsive design for different screen sizes
-
----
-
-## Property Details
-
-Users can view complete details of each property:
-
-- Property description
+- Complete property information
 - Image gallery
-- Available amenities
+- Amenities
 - Ratings
 - Student reviews
-- Accommodation information
+- Interested/Shortlist functionality
 
-Users can mark properties as **Interested/Shortlist**.
+### User Authentication
 
----
+- User Registration
+- User Login
+- Session Management
+- Logout
 
-## User Authentication
+### AJAX Functionality
 
-The system provides:
+- Mark or unmark properties as Interested
+- Dynamic updates without page refresh
 
-- User registration
-- User login
-- Session management
-- Logout functionality
+### React Integration
 
-Logged-in users can save properties to their interested list.
-
----
-
-## AJAX Functionality
-
-AJAX is implemented for dynamic user interactions:
-
-- Mark/unmark properties as interested without page refresh
-- Instant UI updates
-- Smooth communication between frontend and backend
-
----
-
-## React Integration
-
-The property listing feature has been converted into React components.
-
-React is used for:
-
-- Component-based development
+- Component-based frontend
 - Dynamic property rendering
-- Improved user experience
-- Communication with PHP backend APIs
+- Integration with PHP backend APIs
 
 ---
 
-# Technology Stack
+## Technology Stack
 
-## Frontend
+### Frontend
 
-- HTML
-- CSS
+- HTML5
+- CSS3
 - Bootstrap
 - JavaScript
 - React.js
+- Vite
 
-## Backend
+### Backend
 
 - PHP
 
-## Database
+### Database
 
 - MySQL
 
-## Additional Technologies
+### Additional Technologies
 
 - AJAX
-- Vite
 - XAMPP
 
 ---
 
-# Database Design
+## Database
 
 Database Name:
 
@@ -125,7 +95,7 @@ Database Name:
 pglife
 ```
 
-Main database tables:
+Main Tables
 
 - users
 - properties
@@ -134,68 +104,52 @@ Main database tables:
 - interested_users
 - reviews
 
-The database stores user information, property details, amenities, reviews, and shortlisted properties.
-
 ---
 
-# Project Structure
+## Project Structure
 
 ```
 Student-Accommodation-System
-
 │
-├── React-Frontend
-│   ├── public
-│   ├── src
+├── React-Frontend/
+│   ├── public/
+│   ├── src/
 │   ├── package.json
 │   ├── package-lock.json
 │   └── vite.config.js
 │
-├── PHP-Backend Files
-│   ├── api
-│   ├── css
-│   ├── img
-│   ├── includes
-│   ├── js
-│   ├── index.php
-│   ├── property_list.php
-│   ├── property_detail.php
-│   ├── dashboard.php
-│   ├── login.php
-│   ├── signup.php
-│   └── logout.php
+├── api/
+├── css/
+├── includes/
+├── js/
+├── amenities/
+├── Database/
+├── Screenshots/
 │
-├── Database
-│   └── student_accommodation.sql
-│
-├── Screenshots
-│   ├── property_listing.png
-│   ├── property_detail_1.png
-│   ├── property_detail_2.png
-│   └── ajax_interaction.png
-│
-└── README.md
+├── index.php
+├── property_list.php
+├── property_detail.php
+├── dashboard.php
+├── logout.php
+├── README.md
+└── .gitignore
 ```
 
 ---
 
-# How to Run the Project Locally
+## How to Run the Project
 
-## Backend Setup (PHP + MySQL)
+### PHP Backend
 
 1. Install XAMPP.
-
-2. Start:
-   - Apache
-   - MySQL
-
-3. Copy the PHP backend folder into:
+2. Start Apache and MySQL.
+3. Copy the project folder into:
 
 ```
-C:\xampp\htdocs\student-accommodation
+C:\xampp\htdocs\
 ```
 
-4. Import the database file:
+4. Import:
 
 ```
 Database/student_accommodation.sql
@@ -203,35 +157,31 @@ Database/student_accommodation.sql
 
 into phpMyAdmin.
 
-5. Open the backend application:
+5. Open your browser and visit:
 
 ```
-http://localhost/student-accommodation/
+http://localhost/Student-Accommodation-System/
 ```
 
 ---
 
-## React Frontend Setup
+### React Frontend
 
-Navigate to the React folder:
-
-```
-cd React-Frontend
-```
+Open terminal inside the React-Frontend folder.
 
 Install dependencies:
 
-```
+```bash
 npm install
 ```
 
-Start the React development server:
+Run the development server:
 
-```
+```bash
 npm run dev
 ```
 
-React application will run on:
+The React application will run at:
 
 ```
 http://localhost:5173
@@ -239,36 +189,40 @@ http://localhost:5173
 
 ---
 
-# Screenshots
+## Screenshots
 
-The project contains screenshots demonstrating:
+Project screenshots are available inside the **Screenshots** folder.
 
-## Property Listing Page
+They include:
 
-Displays available PG accommodations with property details and filtering options.
-
-## Property Detail Page
-
-Shows complete information about selected properties, including images, amenities, ratings, and reviews.
-
-## AJAX Interaction
-
-Demonstrates the Interested/Shortlist feature working dynamically without refreshing the page.
+- Home Page
+- Property Listing
+- Property Details
+- Interested (Shortlist) Feature
+- Login & Signup
+- React Frontend
 
 ---
 
-# Future Enhancements
+## Future Enhancements
 
-- Deploy the application on a live hosting platform
-- Add online booking functionality
-- Add payment integration
-- Add an advanced property recommendation system
-- Improve dashboard functionality
+- Online booking system
+- Payment gateway integration
+- Advanced property recommendations
+- Admin dashboard
+- Email notifications
+- Mobile application
 
 ---
 
-# Developer
+## Developer
 
 **Armin Taranum**
 
-B.Tech Computer Science and Engineering
+B.Tech – Computer Science and Engineering
+
+---
+
+## License
+
+This project is developed for educational and learning purposes.
