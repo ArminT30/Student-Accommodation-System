@@ -1,21 +1,21 @@
 # Student Accommodation System
 
-A responsive web application that helps students find suitable PG (Paying Guest) accommodations. Users can browse properties, filter accommodations, view detailed information, and shortlist their preferred properties. The project is built using PHP, MySQL, AJAX, and React.
+A responsive web application that helps students find suitable PG (Paying Guest) accommodations. Users can browse properties, filter accommodations, view detailed information, and shortlist their preferred properties. The project is built using **PHP, MySQL, AJAX, React, Bootstrap, and Vite**.
 
 ---
 
 ## Project Overview
 
-The Student Accommodation System provides an easy and interactive platform for students to search for PG accommodations based on their requirements.
+The **Student Accommodation System** provides an easy and interactive platform for students to search for PG accommodations based on their requirements.
 
 The application includes:
 
-- Property listing
-- Property details
-- User authentication
-- Interested (Shortlist) feature
-- AJAX-based interactions
-- React-based frontend components
+- Property Listing
+- Property Details
+- User Authentication
+- Interested (Shortlist) Feature
+- AJAX-based Interactions
+- React-based Frontend Components
 
 ---
 
@@ -89,13 +89,13 @@ The application includes:
 
 ## Database
 
-Database Name:
+**Database Name**
 
 ```
 pglife
 ```
 
-Main Tables
+### Main Tables
 
 - users
 - properties
@@ -108,7 +108,7 @@ Main Tables
 
 ## Project Structure
 
-```
+```text
 Student-Accommodation-System
 │
 ├── React-Frontend/
@@ -142,23 +142,24 @@ Student-Accommodation-System
 
 ### PHP Backend
 
-1. Install XAMPP.
-2. Start Apache and MySQL.
+1. Install **XAMPP**.
+2. Start:
+   - Apache
+   - MySQL
 3. Copy the project folder into:
 
 ```
 C:\xampp\htdocs\
 ```
 
-4. Import:
+4. Open **phpMyAdmin**.
+5. Import:
 
 ```
 Database/student_accommodation.sql
 ```
 
-into phpMyAdmin.
-
-5. Open your browser and visit:
+6. Open your browser and visit:
 
 ```
 http://localhost/Student-Accommodation-System/
@@ -168,7 +169,7 @@ http://localhost/Student-Accommodation-System/
 
 ### React Frontend
 
-Open terminal inside the React-Frontend folder.
+Open a terminal inside the **React-Frontend** folder.
 
 Install dependencies:
 
