@@ -123,6 +123,7 @@ Student-Accommodation-System
 ├── includes/
 ├── js/
 ├── amenities/
+├── img/
 ├── Database/
 ├── Screenshots/
 │
