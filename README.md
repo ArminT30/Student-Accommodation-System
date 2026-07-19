@@ -283,15 +283,6 @@ Presidency University, Bengaluru
 
 This project is developed for **educational and learning purposes**.
 
----
 
-## Final Deliverables
 
-- ✅ Live Project URL
-- ✅ GitHub Repository
-- ✅ MySQL Database Schema (.sql)
-- ✅ Responsive Property Listing
-- ✅ Property Detail Page
-- ✅ AJAX-based Interaction
-- ✅ React Integration
-- ✅ Live Deployment
+
