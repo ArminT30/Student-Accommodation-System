@@ -1,21 +1,32 @@
 # Student Accommodation System
 
-A responsive web application that helps students find suitable PG (Paying Guest) accommodations. Users can browse properties, filter accommodations, view detailed information, and shortlist their preferred properties. The project is built using **PHP, MySQL, AJAX, React, Bootstrap, and Vite**.
+A responsive full-stack web application that helps students find suitable PG (Paying Guest) accommodations. Users can browse available properties, apply filters, view detailed information, and mark properties as interested. The project is developed using PHP, MySQL, AJAX, React, Bootstrap, and Vite, and is deployed on a live hosting platform.
+
+---
+
+## Live Demo
+
+**Live Website:**  
+https://studentaccommodation.rf.gd
+
+**GitHub Repository:**  
+https://github.com/ArminT30/Student-Accommodation-System
 
 ---
 
 ## Project Overview
 
-The **Student Accommodation System** provides an easy and interactive platform for students to search for PG accommodations based on their requirements.
+The **Student Accommodation System** provides a user-friendly platform for students to search for suitable PG accommodations based on their preferences.
 
 The application includes:
 
 - Property Listing
 - Property Details
-- User Authentication
+- User Registration & Login
 - Interested (Shortlist) Feature
 - AJAX-based Interactions
 - React-based Frontend Components
+- Live Deployment
 
 ---
 
@@ -37,8 +48,9 @@ The application includes:
 - Complete property information
 - Image gallery
 - Amenities
+- Property description
 - Ratings
-- Student reviews
+- Student testimonials
 - Interested/Shortlist functionality
 
 ### User Authentication
@@ -52,10 +64,11 @@ The application includes:
 
 - Mark or unmark properties as Interested
 - Dynamic updates without page refresh
+- Improved user interaction
 
 ### React Integration
 
-- Component-based frontend
+- Component-based frontend development
 - Dynamic property rendering
 - Integration with PHP backend APIs
 
@@ -84,25 +97,30 @@ The application includes:
 
 - AJAX
 - XAMPP
+- InfinityFree Hosting
+- GitHub
 
 ---
 
 ## Database
 
-**Database Name**
+### Database Schema
+
+The project database is included in:
 
 ```
-pglife
+Database/student_accommodation.sql
 ```
 
 ### Main Tables
 
 - users
+- cities
 - properties
 - amenities
-- property_amenities
-- interested_users
-- reviews
+- properties_amenities
+- interested_users_properties
+- testimonials
 
 ---
 
@@ -127,11 +145,11 @@ Student-Accommodation-System
 ├── Database/
 ├── Screenshots/
 │
-├── index.php
-├── property_list.php
-├── property_detail.php
 ├── dashboard.php
+├── index.php
 ├── logout.php
+├── property_detail.php
+├── property_list.php
 ├── README.md
 └── .gitignore
 ```
@@ -142,17 +160,17 @@ Student-Accommodation-System
 
 ### PHP Backend
 
-1. Install **XAMPP**.
+1. Install XAMPP.
 2. Start:
    - Apache
    - MySQL
-3. Copy the project folder into:
+3. Copy the project folder to:
 
 ```
 C:\xampp\htdocs\
 ```
 
-4. Open **phpMyAdmin**.
+4. Open phpMyAdmin.
 5. Import:
 
 ```
@@ -191,17 +209,38 @@ http://localhost:5173
 
 ---
 
+## Deployment
+
+The application has been successfully deployed using **InfinityFree Hosting**.
+
+**Live Website:**
+
+https://studentaccommodation.rf.gd
+
+The deployed application includes:
+
+- PHP Backend
+- MySQL Database
+- User Authentication
+- Property Listing
+- Property Details
+- AJAX Functionality
+- React Components
+
+---
+
 ## Screenshots
 
 Project screenshots are available inside the **Screenshots** folder.
 
-They include:
+Included screenshots:
 
 - Home Page
-- Property Listing
-- Property Details
+- Property Listing Page
+- Property Detail Page
 - Interested (Shortlist) Feature
-- Login & Signup
+- Login Page
+- Signup Page
 - React Frontend
 
 ---
@@ -210,9 +249,9 @@ They include:
 
 - Online booking system
 - Payment gateway integration
-- Advanced property recommendations
 - Admin dashboard
 - Email notifications
+- Property recommendation system
 - Mobile application
 
 ---
